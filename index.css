@@ -1,0 +1,128 @@
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding:0px;
+    color:white;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    width:100%;
+    min-height:50px;
+    background-color: rgb(55, 33, 33);
+    overflow: hidden;
+    position:sticky;
+    top:0px;
+    margin:0px;
+    padding: 0px;
+    z-index: 3;
+  
+}
+.nav img {
+    height:50px;
+    width:auto;
+    object-fit: cover;
+    margin-left: 40px;
+}
+.nav ul {
+    float:right;
+    margin-right:20px;
+}
+.nav ul li { 
+    list-style: none;
+    display:inline-block;
+    
+}
+.nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 25px;
+    margin:1vw;
+    padding:18px;
+}
+.nav ul li a:hover {
+opacity:0.7;
+background-color:black;
+}
+.header {
+    width:100%;
+    min-height:91vh;
+    background-color: rgb(54, 25, 25);
+    margin:0px;
+    padding:0px;
+  
+}
+.request {
+    margin:10px;
+    padding:15px;
+    border-radius: 18px;
+    border:2px solid white;
+    float:right;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(54, 25, 25);
+    color:white;
+}
+
+.description {
+    position:absolute;
+    width: 100%;
+    min-height:300px;
+    margin:auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.description h1 {
+    font-size: 4.5vw;
+    margin:0px;
+}
+.butt1, .butt2 {
+    margin:20px;
+    padding:15px;
+    border:2px solid white;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(54, 25, 25);
+    color:white;
+}
+.butt1 {
+    background-color: rgb(36, 36, 129);
+}
+.para {
+
+    max-width: 1000px;
+    margin:auto;
+}
+
+
+@media screen and (max-width:900px) {
+
+    .nav {
+        position:relative;
+    }
+    .nav img {
+        display:block;
+        text-align: center;
+    }
+    .nav ul {
+        width:100%;
+        margin-right:0px;
+    }
+    .nav ul li {
+        width: 100%;
+    }
+    .nav ul li a {
+        display:block;
+        text-align: center;
+    }
+
+
+}
+@media screen and (max-width:500px) {
+    .description h1 {
+        font-size: 25px;
+    }
+}
